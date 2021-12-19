@@ -1,4 +1,93 @@
+:root {
+  --Very_Dark_Magenta: hsl(300, 43%, 22%);
+  --Soft_Pink: hsl(333, 80%, 67%);
+  --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+  --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
 body {
   margin: 0;
-  font-family: "Segoe UI", "Roboto", "Oxygen";
+  font-family: "Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-desktop.svg"),
+    url("./images/bg-pattern-bottom-desktop.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 100vh;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#root {
+  min-height: inherit;
+}
+
+header {
+  height: 45.6px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 4rem 9rem;
+}
+
+footer {
+  padding: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+article {
+  background-color: var(--Very_Dark_Magenta);
+  color: var(--White);
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  border-radius: 0.5rem;
+  flex: 1;
+}
+
+h1 {
+  color: var(--Very_Dark_Magenta);
+}
+
+article h2,
+article p {
+  font-size: 0.8rem;
+  color: var(--Light_Grayish_Magenta);
+}
+
+article h2 {
+  margin: 0;
+}
+article p {
+  line-height: 1.4rem;
+}
+
+article h3 {
+  font-size: 0.8rem;
+  color: var(--Soft_Pink);
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+article:nth-of-type(2) {
+  position: relative;
+  top: 1rem;
+}
+
+article:nth-of-type(3) {
+  position: relative;
+  top: 2rem;
 }

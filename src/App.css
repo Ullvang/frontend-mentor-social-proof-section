@@ -1,7 +1,77 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+#intro {
+  box-sizing: border-box;
+  padding-right: 5rem;
+  flex-basis: 50%;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+#intro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 3rem;
+}
+
+#intro p {
+  color: var(--Dark_Grayish_Magenta);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+#ratings {
+  flex-basis: 50%;
+  /* position: relative; */
+}
+
+#customers {
+  flex-basis: 100%;
+  display: flex;
+  gap: 1.85rem;
+  margin-top: 4rem;
+}
+
+.ratingCard {
+  display: flex;
+  align-items: baseline;
+  background-color: var(--Light_Grayish_Magenta);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--Very_Dark_Magenta);
+  font-weight: 700;
+  max-width: calc(100% - 10rem);
+  font-size: 0.8rem;
+}
+
+.ratingCard p {
+  margin-bottom: 8px;
+}
+
+.ratingCard:nth-child(1) {
+  position: relative;
+  top: 1rem;
+}
+
+.ratingCard:nth-child(2) {
+  position: relative;
+  left: 3rem;
+  top: 1rem;
+}
+
+.ratingCard:nth-child(3) {
+  position: relative;
+  left: 6rem;
+  top: 1rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-header img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
 }

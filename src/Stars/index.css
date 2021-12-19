@@ -1,0 +1,6 @@
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1.5rem;
+}
