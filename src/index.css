@@ -22,10 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-#root {
   min-height: inherit;
+  align-items: center;
 }
 
 header {
@@ -37,6 +35,7 @@ main {
   flex-wrap: wrap;
   padding: 1rem;
   margin: 4rem 9rem;
+  max-width: 1200px;
 }
 
 footer {
